@@ -159,6 +159,10 @@ const handlefont =()=>{
   var element = document.getElementById("myBox");
   element.style.fontFamily = "cursive";
 }
+const handlefontNormal =()=>{
+  var element = document.getElementById("myBox");
+  element.style.fontFamily = "Arial";
+}
 const textToBin =()=> {
   let newText = "";
   for (var i = 0; i < text.length; i++) {
@@ -240,17 +244,18 @@ const repeat = () =>{
         <button className="btn btn-primary my-4 mx-4" onClick={handleSrchClick}>
         Search in text
         </button>
-        <button className="btn btn-primary mx-2" onClick={handlevoice}>Text to Voice</button>
-        <button className="btn btn-primary mx-2" onClick={handleTrim}>Trim text</button>
-        <button className="btn btn-secondary mx-1" onClick={handleUnderscore}>Add Underscore</button>
-        <button className="btn btn-secondary mx-1" onClick={handleItalicFont}>Change to italic</button>
-        <button className="btn btn-secondary mx-1" onClick={download}>Download</button>
-        <button className="btn btn-secondary mx-1" onClick={handleCutclick}>Cut the text</button>
-        <button className="btn btn-secondary mx-1" onClick={vowelCheck}>Count vowels</button>
-        <button className="btn btn-secondary mx-1" onClick={handlefont}>Change font</button>
-        <button className="btn btn-secondary mx-1" onClick={textToBin}>Text to binary</button>
-        <button className="btn btn-secondary mx-1" onClick={orderWords}>Ascending order of ASCII</button>
-        <button className="btn btn-secondary mx-1" onClick={repeat}>Repeat text</button>
+        <button className="btn btn-primary mx-4" onClick={handlevoice}>Text to Voice</button>
+        <button className="btn btn-primary my-4" onClick={handleTrim}>Trim text</button>
+        <button className="btn btn-primary mx-4" onClick={handleUnderscore}>Add Underscore</button>
+        <button className="btn btn-primary " onClick={handleItalicFont}>Change to italic</button>
+        <button className="btn btn-primary my-4 mx-4" onClick={download}>Download</button>
+        <button className="btn btn-primary " onClick={handleCutclick}>Cut the text</button>
+        <button className="btn btn-primary mx-4" onClick={vowelCheck}>Count vowels</button>
+        <button className="btn btn-primary " onClick={handlefont}>Change font</button>
+        <button className="btn btn-primary mx-4" onClick={handlefontNormal}>Change font to arial</button>
+        <button className="btn btn-primary " onClick={textToBin}>Text to binary</button>
+        <button className="btn btn-primary mx-4" onClick={orderWords}>Ascending order of ASCII</button>
+        <button className="btn btn-primary " onClick={repeat}>Repeat text</button>
       </div>
       <div className="container my-2">
         <h3>Your text summary.</h3>
